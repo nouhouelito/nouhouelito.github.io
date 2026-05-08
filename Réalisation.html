@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisation</title>
+    <link rel="stylesheet" href="rea.css">
+</head>
+<body>
+
+    <header>
+        <img src="Sary/Nouhou.png" alt="Logo">
+        <nav>
+            <a href="PortFolio.html">Maison</a>
+            <a href="Réalisation.html">Réalisation</a>
+        </nav>
+    </header>
+
+    <section id="bien" class="fade">
+        <h2>Mes Réalisations</h2>
+            <button onclick="changerTexte()">Cliquez-ici !</button>
+        <p id="texteAnime"></p>
+    </section>
+
+    <section class="Projet fade">
+        <button class="fra" onclick="showContent('proj1')">
+            <article class="type">
+                <h2>Section Football Fianarantsoa</h2>
+                <img src="Sary/Logo section F1.png" alt="Imgade de Présentation">
+                <p>Collaboration depuis 2024</p>
+            </article>
+        </button>
+
+        <button class="fra" onclick="showContent('proj2')">
+            <article class="type">
+                <h2>Commune Rurale Ialananindro</h2>
+                <img src="Sary/Logo CR ialananindro.png" alt="logo">
+                <p>Collaboration depuis 2025</p>
+            </article>
+        </button>
+            
+        <button class="fra" onclick="showContent('proj3')">
+            <article class="type">
+                <h2>Fédération M. de Football</h2>
+                <img src="Sary/Logo Federation.png" alt="logo">
+                <p>Collaboration depuis 2024</p>
+            </article>
+        </button>
+
+        <button class="fra" onclick="showContent('proj4')">
+            <article class="type">
+                <h2>Section Football Vohibato</h2>
+                <img src="Sary/Logo Section Vohibaato.png" alt="logo">
+                <p>Collaboration depuis 2024</p>
+            </article>
+        </button>
+
+        <button class="fra" onclick="showContent('proj5')">
+            <article class="type">
+                <h2>Tsaraofana FC</h2>
+                <img src="Sary/logo tsaraofana 2.png" alt="logo">
+                <p>Création de leur affiches</p>
+            </article>
+        </button>
+
+        <button class="fra" onclick="showContent('proj6')">
+            <article class="type">
+                <h2>Autre organisation</h2>
+                <img src="Sary/icons8_more_26px.png" alt="trois point">
+                <p>Divers Projet</p>
+            </article>
+        </button>
+    </section>
+
+    <!-- CONTENU DYNAMIQUE -->
+    <section id="content" class="fade">
+        <div id="proj1" class="content-item">
+            <div class="icone">
+                <img src="Sary/Logo section F1.png" alt="Imgade de Présentation">
+                <h2>Section Football Fianarantsoa</h2>
+            </div>
+
+            <section class="Projet1">
+                <img src="Sary/Certificat.jpg" alt="" width="300px">
+                <img src="Sary/Classement Groupe B.jpg" alt="" width="180px">
+                <img src="Sary/J4 D3 GA 2026.jpg" alt="" width="180px">
+                <img src="Sary/design Bagde.jpg" alt="" width="180px">
+            </section>
+
+            <section class="Projet1">
+                <img src="Sary/J1 Feminin.jpg" alt="" width="180px">
+                <img src="Sary/Licence Fianarantsoa.jpg" alt="" width="300px">
+                <img src="Sary/Tournoi Basket.jpg" alt="" width="180px">
+                <img src="Sary/Tournoi Vacance 2025.jpg" alt="" width="180px">
+            </section>
+        </div>
+
+        <div id="proj2" class="content-item">
+            <div class="icone">
+                <img src="Sary/Logo CR ialananindro.png" alt="Imgade de Présentation">
+                <h2>Commune Rurale Ialananindro</h2>
+            </div>
+
+            <section class="Projet1">
+                <img src="Sary/Plan de Masse.jpg" alt="" width="180px">
+                <img src="Sary/" alt="">
+                <img src="Sary/8 mars ialananindro.jpg" alt="" width="500px">
+                <img src="Sary/" alt="">
+            </section>
+
+            <section class="Projet1">
+                <img src="Sary/" alt="">
+                <img src="Sary/" alt="">
+                <img src="Sary/" alt="">
+                <img src="Sary/" alt="">
+            </section>
+        </div>
+
+        <div id="proj3" class="content-item">
+            <div class="icone">
+                <img src="Sary/Logo Federation.png" alt="Imgade de Présentation">
+                <h2>Fédération Malagasy de Football</h2>
+            </div>
+
+            <section class="Projet1">
+                <img src="Sary/Phase Final Feminin.png" alt="" width="180px">
+                <img src="Sary/Calendrier U17.jpg" alt="" width="180px">
+                <img src="Sary/Phase Final Feminin Gp.png" alt="" width="180px">
+                <img src="Sary/Mada vs Seychelles.jpg" alt="" width="180px">
+            </section>
+
+            <section class="Projet1">
+                <img src="Sary/Haute Matsiatra.jpg" alt="" width="250px">
+                <img src="Sary/Billet Barea.png" alt="" width="250px">
+                <img src="Sary/Championne.jpg" alt="" width="250px">
+                <img src="Sary/" alt="">
+            </section>
+        </div>
+
+        <div id="proj4" class="content-item">
+            <div class="icone">
+                <img src="Sary/Logo Section Vohibaato.png" alt="Imgade de Présentation">
+                <h2>Section Football Vohibato</h2>
+            </div>
+
+            <section class="Projet1">
+                <img src="Sary/Resultat demi.jpg" alt="" width="300px">
+                <img src="Sary/Quart Vohibato 1.jpg" alt="" width="180px">
+                <img src="Sary/Final 2025 vohibato.jpg" alt="" width="180px">
+            </section>
+
+            <section class="Projet1">
+                <img src="Sary/Certificat Arbitre.jpg" alt="" width="300px">
+                <img src="Sary/Final.png" alt="" width="180px">
+            </section>
+        </div>
+
+        <div id="proj5" class="content-item">
+            <div class="icone">
+                <img src="Sary/logo tsaraofana 2.png" alt="Imgade de Présentation">
+                <h2>Tsaraofana FC</h2>
+            </div>
+
+            <section class="Projet1">
+                <img src="Sary/Jour de match J4.jpg" alt="" width="180px">
+                <img src="Sary/D1 J12.jpg" alt="" width="180px">
+                <img src="Sary/Play off.jpg" alt="" width="180px">
+                <img src="Sary/XI depart.jpg" alt="" width="180px">
+            </section>
+
+            <section class="Projet1">
+                <img src="Sary/Full time play off J1.jpg" alt="" width="300px">
+                <img src="Sary/D1 J9.jpg" alt="" width="300px">
+                <img src="Sary/Final Retour.jpg" alt="" width="180px">
+            </section>
+        </div>
+
+        <div id="proj6" class="content-item">
+            <div class="icone">
+                <h2>Divers Projet</h2>
+            </div>
+
+            <section class="Projet1">
+                <img src="Sary/Cal vao recto.jpg" alt="" width="300px">
+                <img src="Sary/Carte Visite.jpg" alt="" width="300px">
+                <img src="Sary/Fac Science.jpg" alt="" width="180px">
+            </section>
+
+            <section class="Projet1">
+                <img src="Sary/Nouvelle An.jpg" alt="" width="300px">
+                <img src="Sary/17.2.jpg" alt="" width="300px">
+                <img src="Sary/17.1.jpg" alt="" width="300px">
+            </section>
+        </div>
+    </section>
+
+    <Section class="demi fade">
+        <article>
+            <h2>
+                NOUHOU Elito
+            </h2>
+            Illustrateur <br> <br>
+            Donner vie à vos création pour améliorer <br> 
+            l'éxpérience numérique grâce à l'illustration
+        </article>
+
+        <article>
+            <h2>
+                INFORMATION
+            </h2>
+            <div class="loca">
+                <img src="Sary/Localisation.png" alt="" width="40px" height="40px">
+                Adresse <br>
+                Fianarantsoa 301, Madagascar
+            </div>
+            <div class="loca">
+                <img src="Sary/phone.png" alt="" width="40px" height="40px">
+                Téléphone <br>
+                +261 34 45 315 53 / +261 33 26 580 78
+            </div>
+            <div class="loca">
+                <img src="Sary/email.png" alt="" width="40px" height="40px">
+                e-mail <br>
+                nouhouelito@gmail.com
+            </div>
+        </article>
+
+        <article>
+            <h2>
+                Envoyez un message
+            </h2>
+
+            <div id="contact" class="py-5 fade-in">
+                <form method="POST">
+                    <div>
+                        <input type="text" name="nom" placeholder="Votre nom" required>
+                        <input type="email" name="email" placeholder="....@gmail.com" required>
+                    </div>
+                    <textarea name="message" placeholder="Message" required></textarea> <br>
+                    <button>Envoyer <img src="Sary/send.png" alt="" ></button>
+                </form>
+            </div>
+        </article>
+    </Section>
+
+    <footer>
+        <img src="Sary/Nouhou.png" alt="Logo" width="150px">
+        <div>
+            <a href="https://www.facebook.com/nouhou.elito" target="_blank"><img src="Sary/facebook.png" alt="Facebook"></a>
+            <a href="https://www.linkedIn.com/in/nouhou-elito" target="_blank"><img src="Sary/link.png" alt="linkedIn"></a>
+            <a href="https://www.Instagram.com/elitonouhou" target="_blank"><img src="Sary/insta.png" alt="Instagram"></a>
+        </div>
+    </footer>
+
+    <script>
+
+        // ===== TEXTE BOUTON =====
+        function changerTexte() {
+            const texte = document.getElementById("texteAnime");
+            texte.innerText = "Appuyez sur un logo pour découvrir l'utilisation de mon expertise";
+            texte.style.color = "#fff";
+            texte.style.fontSize = "18px";
+        }
+
+        // ===== AFFICHAGE PROJET + ANIMATION =====
+        function showContent(id) {
+
+            const contents = document.querySelectorAll('.content-item');
+
+            contents.forEach(item => {
+                item.style.display = 'none';
+            });
+
+            const target = document.getElementById(id);
+            target.style.display = 'block';
+
+            // animation apparition
+            target.style.opacity = 0;
+            target.style.transform = "translateY(40px)";
+
+            setTimeout(() => {
+                target.style.transition = "0.6s";
+                target.style.opacity = 1;
+                target.style.transform = "translateY(0)";
+            }, 100);
+        }
+
+        // ===== ANIMATION SCROLL =====
+        const faders = document.querySelectorAll('.fade');
+
+        function showOnScroll() {
+            faders.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                const screenHeight = window.innerHeight;
+
+                if (top < screenHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', showOnScroll);
+        window.addEventListener('load', showOnScroll);
+
+        // ===== MACHINE À ÉCRIRE =====
+        const titre = document.querySelector("#bien h2");
+
+        if (titre) {
+            const texte = titre.innerHTML;
+            titre.innerHTML = "";
+
+            let i = 0;
+
+            function typing() {
+                if (i < texte.length) {
+                    titre.innerHTML += texte.charAt(i);
+                    i++;
+                    setTimeout(typing, 80);
+                }
+            }
+
+            typing();
+        }
+
+    </script>
+
+</body>
+</html>
