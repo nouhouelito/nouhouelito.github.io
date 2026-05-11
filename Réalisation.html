@@ -10,8 +10,14 @@
 
     <header>
         <img src="Sary/Nouhou.png" alt="Logo">
-        <nav>
-            <a href="PortFolio.html">Maison</a>
+
+        <!-- Bouton hamburger -->
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <nav id="navbar">
+            <a href="index.html">Maison</a>
             <a href="Réalisation.html">Réalisation</a>
         </nav>
     </header>
@@ -243,6 +249,33 @@
         </article>
     </Section>
 
+    <section class="animation">
+        <article class="animation1">
+
+            <!-- DUPLICATION pour effet infini -->
+            <div class="sary">
+                <img src="Sary/Nouhou.png" alt="logo">
+                <div class="text">NOUHOU Elito | Illustrateur</div>
+            </div>
+
+            <div class="sary">
+                <img src="Sary/Nouhou.png" alt="logo">
+                <div class="text">NOUHOU Elito | Illustrateur</div>
+            </div>
+
+            <div class="sary">
+                <img src="Sary/Nouhou.png" alt="logo">
+                <div class="text">NOUHOU Elito | Illustrateur</div>
+            </div>
+
+            <div class="sary">
+                <img src="Sary/Nouhou.png" alt="logo">
+                <div class="text">NOUHOU Elito | Illustrateur</div>
+            </div>
+
+        </article>
+    </section>
+
     <footer>
         <img src="Sary/Nouhou.png" alt="Logo" width="150px">
         <div>
@@ -321,6 +354,22 @@
 
             typing();
         }
+
+            // ===== MENU HAMBURGER =====
+    const menuToggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
+
+    // ouvrir / fermer menu
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+
+    // fermer menu après clic sur un lien
+    document.querySelectorAll("#navbar a").forEach(link => {
+        link.addEventListener("click", () => {
+            navbar.classList.remove("active");
+        });
+    });
 
     </script>
 
