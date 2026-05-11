@@ -8,12 +8,18 @@
 </head>
 <body>
     <header>
-        <img src="Sary/Nouhou.png" alt="Logo">
-        <nav>
-            <a href="PortFolio.html">Maison</a>
-            <a href="Réalisation.html">Réalisation</a>
-        </nav>
-    </header>
+    <img src="Sary/Nouhou.png" alt="Logo">
+
+    <!-- Bouton hamburger -->
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <nav id="navbar">
+        <a href="index.html">Maison</a>
+        <a href="Réalisation.html">Réalisation</a>
+    </nav>
+</header>
 
     <section class="tete fade">
         <div>
@@ -34,12 +40,11 @@
             Technique
         </h2>
     </div>
-    
+
     <center>
         <h6>
         Une aperçu de mon expertise dans quelques domaines
         </h6>
-
 
         <table class="fade" cellspacing="15">
             <tr>
@@ -229,6 +234,33 @@
             </div>
         </article>
     </Section>
+
+    <section class="animation">
+        <article class="animation1">
+
+            <!-- DUPLICATION pour effet infini -->
+            <div class="sary">
+                <img src="Sary/Nouhou.png" alt="logo">
+                <div class="text">NOUHOU Elito | Illustrateur</div>
+            </div>
+
+            <div class="sary">
+                <img src="Sary/Nouhou.png" alt="logo">
+                <div class="text">NOUHOU Elito | Illustrateur</div>
+            </div>
+
+            <div class="sary">
+                <img src="Sary/Nouhou.png" alt="logo">
+                <div class="text">NOUHOU Elito | Illustrateur</div>
+            </div>
+
+            <div class="sary">
+                <img src="Sary/Nouhou.png" alt="logo">
+                <div class="text">NOUHOU Elito | Illustrateur</div>
+            </div>
+
+        </article>
+    </section>
     
     <footer>
         <img src="Sary/Nouhou.png" alt="Logo" width="150px">
@@ -278,6 +310,22 @@ if (titre) {
 
     typing();
 }
+
+    // ===== MENU HAMBURGER =====
+    const menuToggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
+
+    // ouvrir / fermer menu
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+
+    // fermer menu après clic sur un lien
+    document.querySelectorAll("#navbar a").forEach(link => {
+        link.addEventListener("click", () => {
+            navbar.classList.remove("active");
+        });
+    });
 
 </script>
 
