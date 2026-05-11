@@ -131,7 +131,6 @@ button.fra {
 .demi {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .loca {
@@ -295,11 +294,6 @@ footer div img {
         margin: 10px;
     }
 
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
     nav a {
         display: block;
         padding: 10px;
@@ -329,5 +323,141 @@ footer div img {
 
     .loca {
         width: 100%;
+    }
+}
+
+/* ===== HAMBURGER ===== */
+
+.menu-toggle{
+    display: none;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px){
+
+    body{
+        margin: 10px;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 15px;
+        position: relative;
+        z-index: 1000;
+    }
+
+    header img{
+        width: 100px;
+    }
+
+    /* bouton hamburger */
+    .menu-toggle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 45px;
+        height: 45px;
+
+        font-size: 28px;
+        color: aqua;
+
+        cursor: pointer;
+    }
+
+    /* menu caché */
+    nav{
+        display: none;
+        flex-direction: column;
+
+        position: absolute;
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        background: #222;
+
+        border: 2px solid aqua;
+        border-radius: 15px;
+
+        padding: 10px 0;
+    }
+
+    /* menu visible */
+    nav.active{
+        display: flex;
+    }
+
+    nav a{
+        padding: 15px;
+        margin: 0;
+        text-align: center;
+    }
+
+    table{
+        display: block;
+        overflow-x: auto;
+    }
+
+    th{
+        min-width: 250px;
+    }
+
+    input,
+    textarea{
+        width: 100%;
+    }
+
+    section.tete div{
+        margin-top: 30px;
+    }
+}
+
+.animation {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 80px;
+}
+
+/* Défilement fluide */
+.animation1 {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+/* Bloc (logo + texte) */
+.sary {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 60px;
+}
+
+/* Logo */
+.sary img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Texte */
+.text {
+    font-size: 1.6rem;
+    color: aqua;
+    font-weight: 600;
+}
+
+/* Animation infinie sans coupure */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
     }
 }
