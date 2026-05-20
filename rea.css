@@ -234,7 +234,6 @@ footer div img {
     font-weight: bold;
 }
 
-/* ===== ANIMATIONS ===== */
 
 .fade {
     opacity: 0;
@@ -247,16 +246,57 @@ footer div img {
     transform: translateY(0);
 }
 
-/* effet zoom image */
-.Projet1 img {
-    transition: transform 0.4s ease;
+
+.menu{
+    display: none;
 }
 
-.Projet1 img:hover {
-    transform: scale(1.05);
+
+.animation {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 80px;
 }
 
-/* ===== RESPONSIVE GLOBAL ===== */
+.animation1 {
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+.sary {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 60px;
+}
+
+.sary img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.text {
+    font-size: 1rem;
+    background: linear-gradient(aqua, red);
+    border-radius: 15px;
+    padding: 5px;
+    width: 250px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
 /* TABLETTE */
 @media (max-width: 1024px) {
@@ -294,11 +334,6 @@ footer div img {
         margin: 10px;
     }
 
-    nav a {
-        display: block;
-        padding: 10px;
-    }
-
     section.Projet {
         flex-direction: column;
         align-items: center;
@@ -314,11 +349,11 @@ footer div img {
     }
 
     .Projet1 img {
-        width: 90% !important;
+        width: 60% !important;
     }
 
     input, textarea {
-        width: 100%;
+        width: 80%;
     }
 
     .loca {
@@ -326,18 +361,8 @@ footer div img {
     }
 }
 
-/* ===== HAMBURGER ===== */
-
-.menu-toggle{
-    display: none;
-}
-
-/* ===== MOBILE ===== */
+/* header */
 @media (max-width: 768px){
-
-    body{
-        margin: 10px;
-    }
 
     header{
         display: flex;
@@ -352,41 +377,30 @@ footer div img {
         width: 100px;
     }
 
-    /* bouton hamburger */
-    .menu-toggle{
+    .menu{
         display: flex;
         justify-content: center;
         align-items: center;
-
         width: 45px;
         height: 45px;
-
         font-size: 28px;
         color: aqua;
-
         cursor: pointer;
     }
 
-    /* menu caché */
     nav{
         display: none;
         flex-direction: column;
-
         position: absolute;
         top: 75px;
         left: 0;
-
         width: 100%;
-
         background: #222;
-
         border: 2px solid aqua;
         border-radius: 15px;
-
         padding: 10px 0;
     }
 
-    /* menu visible */
     nav.active{
         display: flex;
     }
@@ -395,69 +409,5 @@ footer div img {
         padding: 15px;
         margin: 0;
         text-align: center;
-    }
-
-    table{
-        display: block;
-        overflow-x: auto;
-    }
-
-    th{
-        min-width: 250px;
-    }
-
-    input,
-    textarea{
-        width: 100%;
-    }
-
-    section.tete div{
-        margin-top: 30px;
-    }
-}
-
-.animation {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    height: 80px;
-}
-
-/* Défilement fluide */
-.animation1 {
-    display: flex;
-    width: max-content;
-    animation: scroll 30s linear infinite;
-}
-
-/* Bloc (logo + texte) */
-.sary {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-right: 60px;
-}
-
-/* Logo */
-.sary img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-}
-
-/* Texte */
-.text {
-    font-size: 1.6rem;
-    color: aqua;
-    font-weight: 600;
-}
-
-/* Animation infinie sans coupure */
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
     }
 }
