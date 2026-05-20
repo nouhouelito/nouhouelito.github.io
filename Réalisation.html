@@ -11,8 +11,7 @@
     <header>
         <img src="Sary/Nouhou.png" alt="Logo">
 
-        <!-- Bouton hamburger -->
-        <div class="menu-toggle" id="menu-toggle">
+        <div class="menu" id="menu">
             ☰
         </div>
 
@@ -28,7 +27,7 @@
         <p id="texteAnime"></p>
     </section>
 
-    <section class="Projet">
+    <section class="Projet fade">
         <button class="fra" onclick="showContent('proj1')">
             <article class="type">
                 <h2>Section Football Fianarantsoa</h2>
@@ -65,7 +64,7 @@
             <article class="type">
                 <h2>Tsaraofana FC</h2>
                 <img src="Sary/logo tsaraofana 2.png" alt="logo">
-                <p>Création de leur affiches</p>
+                <p>Créateur de design</p>
             </article>
         </button>
 
@@ -78,8 +77,7 @@
         </button>
     </section>
 
-    <!-- CONTENU DYNAMIQUE -->
-    <section id="content" class="fade">
+    <section id="contenu" class="fade">
         <div id="proj1" class="content-item">
             <div class="icone">
                 <img src="Sary/Logo section F1.png" alt="Imgade de Présentation">
@@ -200,6 +198,30 @@
         </div>
     </section>
 
+    <section class="animation fade">
+        <article class="animation1">
+            <div class="sary">
+                <img src="Sary/Nouhou.png" alt="logo">
+                <div class="text">Design Graphique</div>
+            </div>
+
+            <div class="sary">
+                <img src="Sary/Nouhou.png" alt="logo">
+                <div class="text">Modélisation 3D</div>
+            </div>
+
+            <div class="sary">
+                <img src="Sary/Nouhou.png" alt="logo">
+                <div class="text">Intégration Web</div>
+            </div>
+
+            <div class="sary">
+                <img src="Sary/Nouhou.png" alt="logo">
+                <div class="text">Design UI/UX, Maquettes</div>
+            </div>
+        </article>
+    </section>
+
     <Section class="demi fade">
         <article>
             <h2>
@@ -249,33 +271,6 @@
         </article>
     </Section>
 
-    <section class="animation">
-        <article class="animation1">
-
-            <!-- DUPLICATION pour effet infini -->
-            <div class="sary">
-                <img src="Sary/Nouhou.png" alt="logo">
-                <div class="text">NOUHOU Elito | Illustrateur</div>
-            </div>
-
-            <div class="sary">
-                <img src="Sary/Nouhou.png" alt="logo">
-                <div class="text">NOUHOU Elito | Illustrateur</div>
-            </div>
-
-            <div class="sary">
-                <img src="Sary/Nouhou.png" alt="logo">
-                <div class="text">NOUHOU Elito | Illustrateur</div>
-            </div>
-
-            <div class="sary">
-                <img src="Sary/Nouhou.png" alt="logo">
-                <div class="text">NOUHOU Elito | Illustrateur</div>
-            </div>
-
-        </article>
-    </section>
-
     <footer>
         <img src="Sary/Nouhou.png" alt="Logo" width="150px">
         <div>
@@ -286,56 +281,7 @@
     </footer>
 
     <script>
-
-        // ===== TEXTE BOUTON =====
-        function changerTexte() {
-            const texte = document.getElementById("texteAnime");
-            texte.innerText = "Appuyez sur un logo pour découvrir l'utilisation de mon expertise";
-            texte.style.color = "#fff";
-            texte.style.fontSize = "18px";
-        }
-
-        // ===== AFFICHAGE PROJET + ANIMATION =====
-        function showContent(id) {
-
-            const contents = document.querySelectorAll('.content-item');
-
-            contents.forEach(item => {
-                item.style.display = 'none';
-            });
-
-            const target = document.getElementById(id);
-            target.style.display = 'block';
-
-            // animation apparition
-            target.style.opacity = 0;
-            target.style.transform = "translateY(40px)";
-
-            setTimeout(() => {
-                target.style.transition = "0.6s";
-                target.style.opacity = 1;
-                target.style.transform = "translateY(0)";
-            }, 100);
-        }
-
-        // ===== ANIMATION SCROLL =====
-        const faders = document.querySelectorAll('.fade');
-
-        function showOnScroll() {
-            faders.forEach(el => {
-                const top = el.getBoundingClientRect().top;
-                const screenHeight = window.innerHeight;
-
-                if (top < screenHeight - 100) {
-                    el.classList.add('visible');
-                }
-            });
-        }
-
-        window.addEventListener('scroll', showOnScroll);
-        window.addEventListener('load', showOnScroll);
-
-        // ===== MACHINE À ÉCRIRE =====
+        // text
         const titre = document.querySelector("#bien h2");
 
         if (titre) {
@@ -355,16 +301,59 @@
             typing();
         }
 
-            // ===== MENU HAMBURGER =====
-    const menuToggle = document.getElementById("menu-toggle");
+        function changerTexte() {
+            const texte = document.getElementById("texteAnime");
+            texte.innerText = "Appuyez sur un logo pour découvrir l'utilisation de mon expertise";
+            texte.style.color = "#fff";
+            texte.style.fontSize = "18px";
+        }
+
+        function showContent(id) {
+            const contents = document.querySelectorAll('.content-item');
+            contents.forEach(item => {
+                item.style.display = 'none';
+            });
+            const target = document.getElementById(id);
+            target.style.display = 'block';
+
+            // animation apparition
+            target.style.opacity = 0;
+            target.style.transform = "translateY(40px)";
+
+            setTimeout(() => {
+                target.style.transition = "0.6s";
+                target.style.opacity = 1;
+                target.style.transform = "translateY(0)";
+            }, 100);
+        }
+
+        // animation scroll
+        const faders = document.querySelectorAll('.fade');
+
+        function showOnScroll() {
+            faders.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                const screenHeight = window.innerHeight;
+
+                if (top < screenHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', showOnScroll);
+        window.addEventListener('load', showOnScroll);
+
+
+    // menu
+    const menuToggle = document.getElementById("menu");
     const navbar = document.getElementById("navbar");
 
-    // ouvrir / fermer menu
-    menuToggle.addEventListener("click", () => {
+        menuToggle.addEventListener("click", () => {
         navbar.classList.toggle("active");
     });
 
-    // fermer menu après clic sur un lien
+
     document.querySelectorAll("#navbar a").forEach(link => {
         link.addEventListener("click", () => {
             navbar.classList.remove("active");
