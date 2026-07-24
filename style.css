@@ -163,7 +163,6 @@ h4 img {
     background: rgb(95, 95, 95);
     width: 400px;
     text-align: left;
-    padding-top: 7px;
     border-radius: 15px;
     margin-top: 20px;
 }
@@ -171,7 +170,7 @@ h4 img {
 .loca img {
     margin-left: 5px;
     margin-right: 5px;
-    
+    padding-top: 5px;
 }
 
 input {
@@ -275,7 +274,7 @@ footer div img {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-30%);
     }
 }
 
@@ -330,6 +329,10 @@ footer div img {
     margin-left: 25px;
     text-align: left;
     animation: fadeDown 0.8s ease;
+}
+
+h3 {
+    color: red;
 }
 
 .donnée p{
@@ -427,6 +430,7 @@ footer div img {
     table {
         display: block;
         overflow-x: auto;
+        margin-left: 60px;
     }
 
     th {
@@ -443,6 +447,10 @@ footer div img {
 
     section.tete div {
         margin-top: 30px;
+    }
+
+    .demi {
+        text-align: center;
     }
 }
 
