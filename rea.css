@@ -66,6 +66,16 @@ section.Projet {
     height: 250px;
 }
 
+.loca a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.loca a:hover {
+    color: red; /* Choisis la couleur que tu souhaites */
+    text-decoration: underline;
+}
+
 .icone {
     display: flex;
     justify-content: center;
