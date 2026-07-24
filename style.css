@@ -113,7 +113,7 @@ tr {
 }
 
 .loca a:hover {
-    color: red; /* Choisis la couleur que tu souhaites */
+    color: red;
     text-decoration: underline;
 }
 
