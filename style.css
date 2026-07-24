@@ -14,6 +14,15 @@ body {
     margin-right: 30px;
 }
 
+.loca a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.loca a:hover {
+    color: red; /* Choisis la couleur que tu souhaites */
+    text-decoration: underline;
+}
 
 header {
     display: flex;
@@ -105,16 +114,6 @@ table {
 }
 tr {
     padding: 10px;
-}
-
-.loca a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.loca a:hover {
-    color: red;
-    text-decoration: underline;
 }
 
 th {
